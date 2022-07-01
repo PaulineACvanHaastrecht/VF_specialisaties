@@ -1,0 +1,50 @@
+html {height: 100%;}
+
+body {
+    font-family: 'Manrope'; 
+    color: #325794;
+    display: grid;
+    justify-items: center;
+    align-items: center;}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #325794;
+    box-sizing: border-box;}
+
+#button {
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+    background-color: #e57c2c; 
+    color: white; 
+    border: 2px solid #e57c2c;
+    outline: none;}
+
+/* button::hover{background-color: white; color: #e57c2c; border: 2px solid #e57c2c;} */
+
+hr{border: 1px solid #f1f1f1;margin-bottom: 25px;}
+
+#login-error-msg {color: red; opacity: 0;}
+
+#login-error-msg-holder {
+    display: grid;
+    justify-items: left;
+    align-items: left;}
+
+#main-holder {
+    width: 30%;
+    height: 70%;}
+
+#login-form {
+    align-self: flex-start;
+    display: grid;
+    justify-items: left;
+    align-items: left;
+    }
