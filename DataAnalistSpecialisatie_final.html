@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+        <style>
+            body {font-family: 'Manrope';}
+            h1 {text-decoration-thickness: auto;}
+            .row{margin-left:20px}
+            .row{margin-top:120px}
+            .row:after{content: ""; display: table; clear: both;}
+    
+            .button {
+                padding: 9px 18px;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 12px;
+                margin: 4px 2px;
+                transition-duration: 0.2s;
+                cursor: pointer;
+                border-radius: 8px;
+                }
+            .button {background-color: #e57c2c; color: white; border: 2px solid #e57c2c;}
+            .button:hover {background-color: white; color: #e57c2c; border: 2px solid #e57c2c;}
+            .collapsible {
+                background-color: #e57c2c;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  width: 5%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 10px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+            .comment-box{
+                width:30%;
+                border: 1px solid #ccc;
+                margin: 50px 0;
+                padding: 10px 20px;
+                font-family: 'Manrope';
+                border-radius: 5px;
+                margin-left: 0%;
+                margin-top: 80px;
+                box-shadow: 0px 0px 10px 1px rgb(165, 165, 165);
+
+            }
+            .comment-box p{
+                text-align: left;
+                font-size: 28px;
+                color: #325794;
+            }
+            .comment-form input, .comment-form textarea{
+                width: 100%;
+                padding: 10px;
+                margin:5px 0;
+                box-sizing: border-box;
+                outline: none;
+                font-size: 18px;
+                font-family: 'Manrope';
+                border: 1px solid #ddd;
+                color: #325794;
+
+            }
+            .comment-form button{
+                margin: 10px;
+                border: none;
+                background-color: #e57c2c;
+                padding: 10px;
+                font-size: 18px;
+                border-radius: 3px;
+                color: white;
+            }
+
+        button:hover{
+            color: white;
+            background-color: #444;
+        }
+        </style>
+        <script>
+            function save(){
+                var checkbox=document.getElementById('checkbox1zaal1');
+                    localStorage.setItem('checkbox1zaal1',checkbox.checked);
+                    checkbox=document.getElementById('checkbox1zaal2');
+                    localStorage.setItem('checkbox1zaal2',checkbox.checked);
+                    checkbox=document.getElementById('checkbox1zaal3');
+                    localStorage.setItem('checkbox1zaal3',checkbox.checked);
+                    checkbox=document.getElementById('checkbox1zaal4');
+                    localStorage.setItem('checkbox1zaal4',checkbox.checked);
+                    checkbox=document.getElementById('checkbox1zaal5');
+                    localStorage.setItem('checkbox1zaal5',checkbox.checked);
+                    checkbox=document.getElementById('checkbox1zaal6');
+                    localStorage.setItem('checkbox1zaal6',checkbox.checked);
+                    checkbox=document.getElementById('checkbox1zaal7');
+                    localStorage.setItem('checkbox1zaal7',checkbox.checked);
+                    checkbox=document.getElementById('checkbox1zaal8');
+                    localStorage.setItem('checkbox1zaal8',checkbox.checked);
+                    checkbox=document.getElementById('checkbox1zaal9');
+                    localStorage.setItem('checkbox1zaal9',checkbox.checked);
+                    checkbox=document.getElementById('checkbox1zaal10');
+                    localStorage.setItem('checkbox1zaal10',checkbox.checked);
+                    checkbox=document.getElementById('checkbox1zaal11');
+                    localStorage.setItem('checkbox1zaal11',checkbox.checked);
+                    checkbox=document.getElementById('checkbox1zaal12');
+                    localStorage.setItem('checkbox1zaal12',checkbox.checked);
+                    checkbox=document.getElementById('checkbox1zaal13');
+                    localStorage.setItem('checkbox1zaal13',checkbox.checked);
+
+            }
+        
+            function load(){
+                var checked = JSON.parse(localStorage.getItem('checkbox1zaal1'));
+                    document.getElementById("checkbox1zaal1").checked =checked;
+                    checked = JSON.parse(localStorage.getItem('checkbox1zaal2'));
+                    document.getElementById("checkbox1zaal2").checked =checked;
+                    checked = JSON.parse(localStorage.getItem('checkbox1zaal3'));
+                    document.getElementById("checkbox1zaal3").checked =checked;
+                    checked = JSON.parse(localStorage.getItem('checkbox1zaal4'));
+                    document.getElementById("checkbox1zaal4").checked =checked;
+                    checked = JSON.parse(localStorage.getItem('checkbox1zaal5'));
+                    document.getElementById("checkbox1zaal5").checked =checked;
+                    checked = JSON.parse(localStorage.getItem('checkbox1zaal6'));
+                    document.getElementById("checkbox1zaal6").checked =checked;
+                    checked = JSON.parse(localStorage.getItem('checkbox1zaal7'));
+                    document.getElementById("checkbox1zaal7").checked =checked;
+                    checked = JSON.parse(localStorage.getItem('checkbox1zaal8'));
+                    document.getElementById("checkbox1zaal8").checked =checked;
+                    checked = JSON.parse(localStorage.getItem('checkbox1zaal9'));
+                    document.getElementById("checkbox1zaal9").checked =checked;
+                    checked = JSON.parse(localStorage.getItem('checkbox1zaal10'));
+                    document.getElementById("checkbox1zaal10").checked =checked;
+                    checked = JSON.parse(localStorage.getItem('checkbox1zaal11'));
+                    document.getElementById("checkbox1zaal11").checked =checked;
+                    checked = JSON.parse(localStorage.getItem('checkbox1zaal12'));
+                    document.getElementById("checkbox1zaal12").checked =checked;
+                    checked = JSON.parse(localStorage.getItem('checkbox1zaal13'));
+                    document.getElementById("checkbox1zaal13").checked =checked;
+
+                }   
+        
+            function wis(){
+                location.reload();
+                localStorage.clear()
+        
+            }
+        </script>
+    </head>
+    <body>
+        <a href="kiestraject_final.html">
+        <p style="position:relative; left:-660px; top:-1000px;"></p>
+        <img src="logo.jpg" alt="logo" width="285" height="100">
+      </a>
+
+      
+        <div>
+            <h1>
+            <p style="text-align:center;font-size: 150%; color: #325794;">
+            Data Analist specialisatie traject
+            </p></h1>
+
+
+            <h1>
+              <p style="font-size: 55%; color: #000000;">
+                ① PowerBI<br>
+              </p></h1>
+
+              <button type="button" class="collapsible">Lees meer</button>
+              <div class="content">
+              <p>
+
+            <h1>
+                <p style="font-size: 50%; color: #000000;">
+                     Uitleg: In het traject PowerBI zul je aan de slag gaan met courses van coursera, youtube en van Microsoft zelf. De courses kunnen overlappen met wat je eerder tijdens de training gedaan hebt, mocht je het gevoel hebben dat er teveel overlap in zit kun je deze onderwerpen overslaan. De Microsoft courses zullen de onderwerpen van het DA-100 Microsoft Power BI examen kort behandelen.
+                    <br>
+                    Tijdsduur: 29 uur (inclusief examen) <br>
+                    <br>
+                    Courses:
+                </p></h1>
+
+                <h1>
+                    <p style="font-size: 42%; color: #000000;">
+                        Course: 1. <br>
+                        Bekijken van skillset
+                    </p></h1>
+
+                    <button type="button" class="collapsible">Lees meer</button>
+                    <div class="content">
+                    <p>
+                        Wat is er nodig voor het halen van het PL-300 Microsoft Power BI examen?
+                    <p><a href="https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4qbu6">Microsoft Certified: Data Analyst Associate - Skill Measured</a></p>
+                    </p>
+                    <body onload="load()">
+                        <input type="checkbox" id="checkbox1zaal1"> I have completed course 1</input> <br>
+                        <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+                    </div>
+                    
+                                    </p></h1>
+                          
+                <h1>
+                        <p style="font-size: 42%; color: #000000;">
+                            Course: 2. <br>
+                            Youtube
+                        </p></h1>
+                        
+                        <button type="button" class="collapsible">Lees meer</button>
+<div class="content">
+<p> Totaal: 2 uur <br>
+    Start vanaf 00:01:06 <br>
+    <br>
+    Tip: verhoog de snelheid van het praten.
+    This video will help you prepare for the DA-100 exam: Analyzing Data with Microsoft Power BI. You will get a complete understanding of the Power BI platform and be prepared to take the certification exam.
+<p><a href="https://www.youtube.com/watch?v=Tfk3ae0qz3A">DA-100: Analyzing Data with Microsoft Power BI – FULL COURSE in 2 hours - YouTube</a></p>
+</p>
+<body onload="load()">
+    <input type="checkbox" id="checkbox1zaal3"> I have completed course 2</input> <br>
+    <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+</div>
+
+                </p></h1> 
+
+                <h1>
+                    <p style="font-size: 42%; color: #000000;">
+                        Course: 3. <br>
+                        Coursera Guided Project
+                    </p></h1>
+
+                    <button type="button" class="collapsible">Lees meer</button>
+<div class="content">
+<p> Totaal: 2 uur <br>
+    <br>
+    Tip: verhoog de snelheid van het praten. <br>
+    In this 2-hour long project-based course, you will learn the basics of using Power BI Desktop software. We will do this by analyzing data on credit card defaults with Power BI Desktop. Power BI Desktop is a free Business Intelligence application from Microsoft that lets you load, transform, and visualize data. You can create interactive reports and dashboards quite easily, and quickly. We will learn some of the basics of Power BI by importing, transforming, and visualizing the data.
+    </p>
+<p><a href="https://www.coursera.org/projects/power-bi-desktop"> Getting Started with PowerBI Desktop (coursera.org) </a></p>
+</p>
+<body onload="load()">
+    <input type="checkbox" id="checkbox1zaal2"> I have completed course 3</input> <br>
+    <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+</div>
+
+                </p></h1>
+
+                <h1>
+                    <p style="font-size: 42%; color: #000000;">
+                        Course: 4. <br>
+                        Coursera Guided project
+                    </p></h1>
+
+                    <button type="button" class="collapsible">Lees meer</button>
+<div class="content">
+<p>
+    Totaal: 1.5 uur <br>
+<br>
+Tip: verhoog de snelheid van het praten. <br>
+In this project, you will create a Dashboard in Power BI. You will get data to bring into a model, build several reports, generate informative charts from each report, then choose powerful visuals to highlight on a Dashboard. Your new skills will help you efficiently summarize important information on a one-page dashboard with visual data.
+</p>
+<p><a href="https://www.coursera.org/projects/build-dashboards-power-bi"> Build Dashboards in Power BI (coursera.org) </a></p>
+
+</p>
+<body onload="load()">
+    <input type="checkbox" id="checkbox1zaal4"> I have completed course 4</input> <br>
+    <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+</div>
+
+
+    
+                </p></h1>
+
+                <h1>
+                    <p style="font-size: 42%; color: #000000;">
+                        Course: 5. <br>
+                        Coursera Guided Project
+                    </p></h1>
+
+                    <button type="button" class="collapsible">Lees meer</button>
+<div class="content">
+<p>
+    Totaal: 1 uur <br>
+<br>
+In this 1 hour long project, you will build an attractive and eye-catching personal stock dashboard that is able to fetch the prices of stocks and cryptocurrencies in real-time. We will be using one of the best finance APIs to fetch real-time stock prices. We will begin by importing relevant financial data using the finance API. We will import two different data: one for stock summary and another for historical prices. We will then create our dashboard. In the final tasks, we will automate the dashboard so that you can get live prices and data for any of your favourite stocks or cryptocurrencies within a few seconds. By the end of this course, you will be confident in importing financial data using finance API, creating dashboards and live tracking of all of your favourite stocks in real-time using Power BI.
+<p><a href="https://www.coursera.org/projects/build-a-real-time-stock-market-dashboard-using-power-bi"> Build a Real-time Stock Market Dashboard using Power BI (coursera.org) </a></p>
+
+</p>
+<body onload="load()">
+    <input type="checkbox" id="checkbox1zaal5"> I have completed course 5</input> <br>
+    <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+</div>
+
+
+    
+                </p></h1>
+
+                <h1>
+                    <p style="font-size: 42%; color: #000000;">
+                        Course: 6. <br>
+                        Microsoft Learning Path - Getting started
+                    </p></h1>
+
+                    <button type="button" class="collapsible">Lees meer</button>
+<div class="content">
+<p>
+    Totaal: 1 uur 16 minuten <br>
+<br>
+Businesses need data analysis more than ever. In this learning path, you will learn about the life and journey of a data analyst, the skills, tasks, and processes they go through in order to tell a story with data so trusted business decisions can be made. You will learn how the suite of Power BI tools and services are used by a data analyst to tell a compelling story through reports and dashboards, and the need for true BI in the enterprise.
+This learning path can help you prepare for the Microsoft Certified: Data Analyst Associate certification.
+This learning path helps prepare you for Exam DA-100: Analyzing Data with Microsoft Power BI, Exam PL-300: Microsoft Power BI Data Analyst.
+<p><a href="https://docs.microsoft.com/en-us/learn/paths/data-analytics-microsoft/"> Get started with Microsoft data analytics </a></p>
+
+</p>
+<body onload="load()">
+    <input type="checkbox" id="checkbox1zaal6"> I have completed course 6</input> <br>
+    <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+</div>
+
+
+    
+                </p></h1>
+
+                <h1>
+                    <p style="font-size: 42%; color: #000000;">
+                        Course: 6.1 <br>
+                        Microsoft Learning Path - Prepare data
+                    </p></h1>
+
+                    <button type="button" class="collapsible">Lees meer</button>
+<div class="content">
+<p> Totaal: 3 uur 26 minuten <br>
+    <br>
+    You will explore Power Query as you learn to extract data from different data sources and choose a storage mode and connectivity type. You will learn to profile, clean, and load data into Power BI in preparation for modeling your data.
+<p><a href="https://docs.microsoft.com/en-us/learn/paths/prepare-data-power-bi/"> Prepare data for analysis </a></p>
+</p>
+<body onload="load()">
+    <input type="checkbox" id="checkbox1zaal7"> I have completed course 6.1</input> <br>
+    <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+</div>
+
+
+    
+                </p></h1>
+
+                <h1>
+                    <p style="font-size: 42%; color: #000000;">
+                        Course: 6.2 <br>
+                        Microsoft Learning Path - Model data
+                    </p></h1>
+
+                    <button type="button" class="collapsible">Lees meer</button>
+<div class="content">
+<p>Totaal: 5 uur 57 minuten <br>
+<br>
+Success with Power BI begins with a great data model. In this module, you will learn how to design a data model that is intuitive, high-performing, and simple to maintain. You will learn about using DAX language to create measures. Those measures will help you create a wide variety of analytic solutions. Additionally, you’ll learn how to improve performance with your Power Query data retrieval tasks.
+<p><a href="https://docs.microsoft.com/en-us/learn/paths/model-power-bi/"> Model data in Power BI </a></p>
+Totaal: 5 uur 57 minuten <br>
+<br>
+Success with Power BI begins with a great data model. In this module, you will learn how to design a data model that is intuitive, high-performing, and simple to maintain. You will learn about using DAX language to create measures. Those measures will help you create a wide variety of analytic solutions. Additionally, you’ll learn how to improve performance with your Power Query data retrieval tasks.
+</p>
+<body onload="load()">
+    <input type="checkbox" id="checkbox1zaal8"> I have completed course 6.2</input> <br>
+    <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+</div>
+                    
+
+                        
+                                    </p></h1>
+
+                                    <h1>
+                                        <p style="font-size: 42%; color: #000000;">
+                                            Course: 6.3 <br>
+                                            Microsoft Learning Path - Visualize data
+                                        </p></h1>
+
+                                        <button type="button" class="collapsible">Lees meer</button>
+<div class="content">
+<p>Totaal: 5 uur 50 minuten <br>
+<br>
+Power BI has extraordinary visuals that can be used on Power BI reports and dashboards. In this module, you will learn when to use which visual to solve which problem. You will also learn report design and report formatting. Additionally, you will learn how to use report navigation to tell a compelling, data-driven story in Power BI. Dashboards will help your users target report visuals to meet their specific needs. Paginated reports help you create pixel-perfect report artifacts like sales invoices, purchase orders, medical records, transaction statements, and much more.
+<p><a href="https://docs.microsoft.com/en-us/learn/paths/visualize-data-power-bi/"> Visualize data in Power BI </a></p>
+</p>
+<body onload="load()">
+    <input type="checkbox" id="checkbox1zaal9"> I have completed course 6.3</input> <br>
+    <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+</div>
+                    
+
+                        
+                                    </p></h1>
+
+                                    <h1>
+                                        <p style="font-size: 42%; color: #000000;">
+                                            Course: 6.4 <br>
+                                            Microsoft Learning Path - Analyze data
+                                        </p></h1>
+
+                                        <button type="button" class="collapsible">Lees meer</button>
+<div class="content">
+<p>
+    Totaal: 1 uur 52 minuten <br>
+<br>
+Report authors can use more features to enhance their reports for analytical insights in their data with features like Q&A and exporting. In this module, you will closely examine your data and Power BI reports and then extract value with deeper analysis. Additionally, you will learn how to sort data and how to present the report in a cohesive manner. You will learn how to get a statistical summary for your data and export data from Power BI. You will also apply and perform advanced analytics on the report for deeper and more meaningful data insights.
+<p><a href="https://docs.microsoft.com/en-us/learn/paths/perform-analytics-power-bi/"> Data analysis in Power BI </a></p>
+
+</p>c
+<body onload="load()">
+    <input type="checkbox" id="checkbox1zaal10"> I have completed course 6.4</input> <br>
+    <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+</div>
+                    
+
+                        
+                                    </p></h1>
+
+                                    <h1>
+                                        <p style="font-size: 42%; color: #000000;">
+                                            Course: 6.5 <br>
+                                            Microsoft Learning Path - Manage workspaces and datasets
+                                        </p></h1>
+
+                                        <button type="button" class="collapsible">Lees meer</button>
+<div class="content">
+<p>
+    Totaal: 1 uur 10 minuten <br>
+<br>
+Once you have created your Power BI data sets and reports, it’s time to deploy them so the users can take advantage of all of your hard work. In this Learning Path, you will learn how to create workspaces in the Power BI service. You will deploy your Power BI artifacts here and share them to your users. You will also learn how to connect Power BI reports to on-premise data sources. Your users will appreciate seeing the latest data in your reports, so you will configure automatic refresh for your Power BI datasets. Row-level security allows you to create one report, but have users be restricted to see only the data that applies to them. This targets data to users, without having to create multiple reports.
+<p><a href="https://docs.microsoft.com/en-us/learn/paths/manage-workspaces-datasets-power-bi/"> Manage workspaces and datasets in Power BI </a></p>
+
+</p>
+<body onload="load()">
+    <input type="checkbox" id="checkbox1zaal11"> I have completed course 6.5</input> <br>
+    <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+</div>
+                    
+
+                        
+                                    </p></h1>
+
+                                </p></h1>
+
+                                <h1>
+                                    <p style="font-size: 42%; color: #000000;">
+                                        Course: 7. <br>
+                                        Short-cut voor het maken van Examen PL-300 (Voorheen DA-100) (Optioneel)
+                                    </p></h1>
+
+                                    <button type="button" class="collapsible">Lees meer</button>
+<div class="content">
+<p>
+<p><a href="https://docs.microsoft.com/en-us/learn/certifications/exams/pl-300"> PL-300 Exam </a></p>
+On Examptopics you can find practice questions for the PL-300 exam. Making these questions will help you prepare for the exam. To prepare for the exam, focusing on the Microsoft Learning Path is
+required. The Coursera courses will help you get some hands-on experience with Power BI but are not directly related to the PL-300 exam. To succeed at the exam, additional learning is needed and you will have to do additional reading on topics you do not fully understand.
+</p>
+<body onload="load()">
+    <input type="checkbox" id="checkbox1zaal12"> I have completed course 7</input> <br>
+    <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+</div>
+                    
+<script>
+                        var coll = document.getElementsByClassName("collapsible");
+                        var i;
+                        
+                        for (i = 0; i < coll.length; i++) {
+                          coll[i].addEventListener("click", function() {
+                            this.classList.toggle("active");
+                            var content = this.parentElement.nextElementSibling;
+                            if (content.style.display === "block") {
+                              content.style.display = "none";
+                            } else {
+                              content.style.display = "block";
+                            }
+                          });
+                        }
+                        </script>
+                        
+                                    </p></h1>
+                                  </div>
+
+
+                                  <h1>
+                                    <p style="font-size: 55%; color: #000000;">
+                                      ② Data visualization in Python
+                                    </p></h1>
+
+                                    <button type="button" class="collapsible">Lees meer</button>
+                                    <div class="content">
+                                    <p>
+
+                                    <h1>
+                                        <p style="font-size: 50%; color: #000000;">
+                                             Uitleg: In deze course zul je meer leren over visualisatie mogelijkheden in Python, en de bijbehorende plotting libraries. Zo krijg je ervaring met de veel gebruikte packages matplotlib, seaborn en folium.<br>
+                                            <br>
+                                            Courses <br>
+
+                                            <h1>
+                                                <p style="font-size: 42%; color: #000000;">
+                                            Course: 1. <br>
+                                            Visualisatie in Python
+                                        </p></h1>
+                                        <button type="button" class="collapsible">Lees meer</button>
+<div class="content">
+<p>
+<p><a href="https://www.coursera.org/learn/python-for-data-visualization"> Data Visualization with Python - Home | Coursera </a></p>
+Totaal: 17 uur <br>
+<br>
+The main goal of this Data Visualization with Python course is to teach you how to take data that at first glance has little meaning and present that data in a form that makes sense to people. Various techniques have been developed for presenting data visually but in this course, we will be using several data visualization libraries in Python, namely Matplotlib, Seaborn, and Folium.
+</p>
+<body onload="load()">
+    <input type="checkbox" id="checkbox1zaal13"> I have completed course 1</input> <br>
+    <input type="button" id="ReserveerButton1" value="save" onclick="save()"/> <br>
+</div>
+                    
+<script>
+                        var coll = document.getElementsByClassName("collapsible");
+                        var i;
+                        
+                        for (i = 0; i < coll.length; i++) {
+                          coll[i].addEventListener("click", function() {
+                            this.classList.toggle("active");
+                            var content = this.nextElementSibling;
+                            if (content.style.display === "block") {
+                              content.style.display = "none";
+                            } else {
+                              content.style.display = "block";
+                            }
+                          });
+                        }
+                        </script>
+                        
+                        
+                                    </p></h1>
+
+                                  </div>
+
+    <div class="comment-box">
+        <p>Leave a comment</p>
+        <form class="comment-form">
+            <input type="text" name="full_name" placeholder="Name...">
+            <textarea rows="3" placeholder="Write your comment..."></textarea>
+            <button type="submit"> Post comment</button>
+        </form>
+    </div>
+
+    <div class="column" style="background-color: white;"> 
+        <h1>
+        <p style="position:relative; left:-720px; top:220px; text-align:center;font-size: 150%;" >
+        <a href= "kiestraject_final.html" class="button">
+            Terug
+</body>
+</html>

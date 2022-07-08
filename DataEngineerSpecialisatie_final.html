@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+        <style>
+            body {font-family: 'Manrope';}
+            h1 {text-decoration-thickness: auto;}
+            .row{margin-left:20px}
+            .row{margin-top:120px}
+            .row:after{content: ""; display: table; clear: both;}
+    
+            .button {
+                padding: 9px 18px;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 12px;
+                margin: 4px 2px;
+                transition-duration: 0.2s;
+                cursor: pointer;
+                border-radius: 8px;
+                }
+            .button {background-color: #e57c2c; color: white; border: 2px solid #e57c2c;}
+            .button:hover {background-color: white; color: #e57c2c; border: 2px solid #e57c2c;}
+            .collapsible {
+                background-color: #e57c2c;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  width: 5%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 10px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+            .comment-box{
+                width:30%;
+                border: 1px solid #ccc;
+                margin: 50px 0;
+                padding: 10px 20px;
+                font-family: 'Manrope';
+                border-radius: 5px;
+                margin-left: 0%;
+                margin-top: 80px;
+                box-shadow: 0px 0px 10px 1px rgb(165, 165, 165);
+
+            }
+            .comment-box p{
+                text-align: left;
+                font-size: 28px;
+                color: #325794;
+            }
+            .comment-form input, .comment-form textarea{
+                width: 100%;
+                padding: 10px;
+                margin:5px 0;
+                box-sizing: border-box;
+                outline: none;
+                font-size: 18px;
+                font-family: 'Manrope';
+                border: 1px solid #ddd;
+                color: #325794;
+
+            }
+            .comment-form button{
+                margin: 10px;
+                border: none;
+                background-color: #e57c2c;
+                padding: 10px;
+                font-size: 18px;
+                border-radius: 3px;
+                color: white;
+            }
+
+        button:hover{
+            color: white;
+            background-color: #444;
+        }
+        </style>
+    </head>
+    <body>
+        <a href="kiestraject_final.html">
+            <p style="position:relative; left:-660px; top:-1000px;"></p>
+            <img src="logo.jpg" alt="logo" width="285" height="100">
+          </a>
+    
+            <div>
+                <h1>
+                <p style="text-align:center;font-size: 150%; color: #325794;">
+                Data Engineer specialisatie traject
+                </p></h1>
+    
+                <h1>
+                    <p style="font-size: 50%; color: #000000;">
+                        ① Data Engineering<br> Uitleg: Voor een Data Engineer is data collection een belangrijk aspect. Daarom zul je in deze course leren hoe je data van het web scraped met gebruik van python code.
+                        <br>
+                        Tijdsduur: 19 uur <br>
+                        </p></h1>
+    
+                        <h1>
+                            <p style="font-size: 42%; color: #000000;">
+                                Course: 1. <br>
+                                <br>
+                                Traject Web Scraping met Python
+                            </p></h1>
+    
+                            <button type="button" class="collapsible">Lees meer</button>
+    <div class="content">
+    <p>
+    <p><a href="https://www.coursera.org/learn/python-network-data">Using Python to Access Web Data | Coursera</a></p>
+    
+    
+    Totaal: 19 uur <br>
+    <br>
+    This course will show how one can treat the Internet as a source of data. We will scrape, parse, and read web data as well as access data using web APIs. We will work with HTML, XML, and JSON data formats in Python. This course will cover Chapters 11-13 of the textbook “Python for Everybody”. To succeed in this course, you should be familiar with the material covered in Chapters 1-10 of the textbook and the first two courses in this specialization. These topics include variables and expressions, conditional execution (loops, branching, and try/except), functions, Python data structures (strings, lists, dictionaries, and tuples), and manipulating files. This course covers Python 3.
+    </p>
+    <script>
+        function save(){
+            var checkbox=document.getElementById('checkbox1zaal1');
+                localStorage.setItem('checkbox1zaal1',checkbox.checked);
+        }
+    
+        function load(){
+            var checked = JSON.parse(localStorage.getItem('checkbox1zaal1'));
+                document.getElementById("checkbox1zaal1").checked =checked;
+            }   
+    
+        function wis(){
+            location.reload();
+            localStorage.clear()
+    
+        }
+    </script>
+    
+    <body onload="load()">
+    <input type="checkbox" id="checkbox1zaal1"> I have completed this course</input>
+    <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+    </body>
+    </div>
+    
+    
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+    
+    </p></h1>
+
+    <div class="comment-box">
+        <p>Leave a comment</p>
+        <form class="comment-form">
+            <input type="text" name="full_name" placeholder="Name...">
+            <textarea rows="3" placeholder="Write your comment..."></textarea>
+            <button type="submit"> Post comment</button>
+        </form>
+    </div>
+
+    <div class="column" style="background-color: white;"> 
+        <h1>
+        <p style="position:relative; left:-720px; top:220px; text-align:center;font-size: 150%;" >
+        <a href= "kiestraject_final.html" class="button">
+            Terug
+</body>
+</html>
