@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+        <style>
+            body {font-family: 'Manrope';}
+            h1 {text-decoration-thickness: auto;}
+            .row{margin-left:20px}
+            .row{margin-top:120px}
+            .row:after{content: ""; display: table; clear: both;}
+    
+            .button {
+                padding: 9px 18px;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 12px;
+                margin: 4px 2px;
+                transition-duration: 0.2s;
+                cursor: pointer;
+                border-radius: 8px;
+                }
+            .button {background-color: #e57c2c; color: white; border: 2px solid #e57c2c;}
+            .button:hover {background-color: white; color: #e57c2c; border: 2px solid #e57c2c;}
+            .collapsible {
+                margin: 10px;
+                border: none;
+                background-color: #e57c2c;
+                padding: 10px;
+                font-size: 18px;
+                border-radius: 3px;
+                color: white;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  width: 8%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 10px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: whitesmoke;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:95%;
+  border: 1px solid #ccc;
+                margin: 50px 0;
+                padding: 10px 20px;
+                font-family: 'Manrope';
+                border-radius: 5px;
+                margin-left: 0%;
+                margin-top: 20px;
+                box-shadow: 0px 0px 10px 1px rgb(165, 165, 165);
+}
+            .comment-box{
+                width:30%;
+                border: 1px solid #ccc;
+                margin: 50px 0;
+                padding: 10px 20px;
+                font-family: 'Manrope';
+                border-radius: 5px;
+                margin-left: 0%;
+                margin-top: 80px;
+                box-shadow: 0px 0px 10px 1px rgb(165, 165, 165);
+
+            }
+            .comment-box p{
+                text-align: left;
+                font-size: 28px;
+                color: #325794;
+            }
+            .comment-form input, .comment-form textarea{
+                width: 100%;
+                padding: 10px;
+                margin:5px 0;
+                box-sizing: border-box;
+                outline: none;
+                font-size: 18px;
+                font-family: 'Manrope';
+                border: 1px solid #ddd;
+                color: #325794;
+
+            }
+            .comment-form button{
+                margin: 10px;
+                border: none;
+                background-color: #e57c2c;
+                padding: 10px;
+                font-size: 18px;
+                border-radius: 3px;
+                color: white;
+            }
+
+        button:hover{
+            color: white;
+            background-color: #444;
+        }
+        body {
+            background-image:url('cool-background2.jpg');
+            padding: 1px 1px;
+            margin: 80px;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            }
+            
+        </style>
+                <script>
+                    function save(){
+                        var checkbox=document.getElementById('checkbox1zaal1EN');
+                            localStorage.setItem('checkbox1zaal1EN',checkbox.checked);
+                            checkbox=document.getElementById('checkbox1zaal2EN');
+                            localStorage.setItem('checkbox1zaal2EN',checkbox.checked);
+                            checkbox=document.getElementById('checkbox1zaal3EN');
+                            localStorage.setItem('checkbox1zaal3EN',checkbox.checked);
+                            checkbox=document.getElementById('checkbox1zaal4EN');
+                            localStorage.setItem('checkbox1zaal4EN',checkbox.checked);
+                            checkbox=document.getElementById('checkbox1zaal5EN');
+                            localStorage.setItem('checkbox1zaal5EN',checkbox.checked);
+                            checkbox=document.getElementById('checkbox1zaal6EN');
+                            localStorage.setItem('checkbox1zaal6EN',checkbox.checked);
+                            checkbox=document.getElementById('checkbox1zaal7EN');
+                            localStorage.setItem('checkbox1zaal7EN',checkbox.checked);
+                            checkbox=document.getElementById('checkbox1zaal8EN');
+                            localStorage.setItem('checkbox1zaal8EN',checkbox.checked);
+                    }
+                function load(){
+                    var checked = JSON.parse(localStorage.getItem('checkbox1zaal1EN'));
+                        document.getElementById("checkbox1zaal1EN").checked =checked;
+                        checked = JSON.parse(localStorage.getItem('checkbox1zaal2EN'));
+                        document.getElementById("checkbox1zaal2EN").checked =checked;
+                        checked = JSON.parse(localStorage.getItem('checkbox1zaal3EN'));
+                        document.getElementById("checkbox1zaal3EN").checked =checked;
+                        checked = JSON.parse(localStorage.getItem('checkbox1zaal4EN'));
+                        document.getElementById("checkbox1zaal4EN").checked =checked;
+                        checked = JSON.parse(localStorage.getItem('checkbox1zaal5EN'));
+                        document.getElementById("checkbox1zaal5EN").checked =checked;
+                        checked = JSON.parse(localStorage.getItem('checkbox1zaal6EN'));
+                        document.getElementById("checkbox1zaal6EN").checked =checked;
+                        checked = JSON.parse(localStorage.getItem('checkbox1zaal7EN'));
+                        document.getElementById("checkbox1zaal7EN").checked =checked;
+                        checked = JSON.parse(localStorage.getItem('checkbox1zaal8EN'));
+                        document.getElementById("checkbox1zaal8EN").checked =checked;
+                }   
+
+        function wis(){
+            location.reload();
+            localStorage.clear()
+    
+        }
+    </script>
+    </head>
+    <body>
+        <a href="kiestraject.html">
+            <p style="position:relative; left:-660px; top:-1000px;"></p>
+            <img src="logotransparant.png" alt="logo" width="285" height="100">
+          </a>
+    
+            <div>
+                <h1>
+                <p style="text-align:center;font-size: 150%; color: #325794;">
+                Data Engineer specialisatie traject
+                </p></h1>
+                <h1>
+                    <p style="font-size: 75%; color: #000000;">
+                        ① Web scraping met Python<br> 
+                        <p style="font-size: 50%; color: #000000;">    
+                        Uitleg: Voor een Data Engineer is data collection een belangrijk aspect. Daarom zul je in deze course leren hoe je data van het web scraped met gebruik van python code. <br>
+                        
+                        Tijdsduur: 19 uur <br>
+                        </p></h1>
+    
+                        <h1>
+                            <p style="font-size: 50%; color: #000000;">
+                            </p></h1>
+    
+                            <button type="button" class="collapsible">Bekijk course</button>
+    <div class="content">
+    <p>Course: 1.
+    <p><a href="https://www.coursera.org/learn/python-network-data">Using Python to Access Web Data | Coursera</a></p>
+    
+    
+    Totaal: 19 uur <br>
+    <br>
+    This course will show how one can treat the Internet as a source of data. We will scrape, parse, and read web data as well as access data using web APIs. We will work with HTML, XML, and JSON data formats in Python. This course will cover Chapters 11-13 of the textbook “Python for Everybody”. To succeed in this course, you should be familiar with the material covered in Chapters 1-10 of the textbook and the first two courses in this specialization. These topics include variables and expressions, conditional execution (loops, branching, and try/except), functions, Python data structures (strings, lists, dictionaries, and tuples), and manipulating files. This course covers Python 3.
+    </p>
+
+    <body onload="load()">
+    <input type="checkbox" id="checkbox1zaal1EN"> I have completed this course</input>
+    <input type="button" id="ReserveerButton1" value="save" onclick="save()"/> <br>
+    <br>
+    </body>
+    </div>
+    
+    
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.parentElement.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+<h1>
+    <p style="font-size: 75%; color: #000000;">
+        ② Traject Azure Fundamentals<br> 
+        <p style="font-size: 50%; color: #000000;">    
+        Uitleg: In this course, you will learn the fundamentals of database concepts in a cloud environment,
+        get basic skilling in cloud data services, and build your foundational knowledge of cloud data services
+        within Microsoft Azure. You will identify and describe core data concepts such as relational, non-
+        relational, big data, and analytics, and explore how this technology is implemented with Microsoft
+        Azure. You will explore the roles, tasks, and responsibilities in the world of data. <br> <br>
+        Tijdsduur: 40 uur <br>
+        
+        </p></h1>
+
+        <button type="button" class="collapsible">Bekijk course</button>
+        <div class="content">
+        <p><h1>
+
+            <p style="font-size: 42%; color: #000000;">
+            </p></h1>
+            <p>
+                Coursera DP-900 courses (1-5)
+            <p><a href="https://www.coursera.org/learn/explore-core-data-concepts-microsoft-azure?specialization=microsoft-azure-dp-900-data-fundamentals">1. Explore Core Data Concepts in Microsoft Azure | Coursera</a></p> 
+                <body onload="load()">
+                <input type="checkbox" id="checkbox1zaal2EN"> I have completed course 1</input>
+                <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+            <p><a href="https://www.coursera.org/learn/microsoft-azure-sql?specialization=microsoft-azure-dp-900-data-fundamentals">2. Microsoft Azure SQL | Coursera</a></p>
+            <body onload="load()">
+                <input type="checkbox" id="checkbox1zaal3EN"> I have completed course 2</input>
+                <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+            <p><a href="https://www.coursera.org/learn/microsoft-azure-cosmos-db?specialization=microsoft-azure-dp-900-data-fundamentals">3. Microsoft Azure Cosmos DB | Coursera</a></p>
+            <body onload="load()">
+                <input type="checkbox" id="checkbox1zaal4EN"> I have completed course 3</input>
+                <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+            <p><a href="https://www.coursera.org/learn/data-warehouse-analytics-microsoft-azure?specialization=microsoft-azure-dp-900-data-fundamentals">4. Modern Data Warehouse Analytics in Microsoft Azure | Coursera</a></p>
+            <body onload="load()">
+                <input type="checkbox" id="checkbox1zaal5EN"> I have completed course 4</input>
+                <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+            <p><a href="https://www.coursera.org/learn/microsoft-dp-900-exam-prep?specialization=microsoft-azure-dp-900-data-fundamentals">5. Preparing for DP-900: Microsoft Azure Data Fundamentals Exam | Coursera</a></p>
+            <body onload="load()">
+                <input type="checkbox" id="checkbox1zaal6EN"> I have completed course 5</input>
+                <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+
+        <h1>
+
+    <p style="font-size: 50%; color: #000000;">
+        Optioneel: Hands-on Lab Cloud Academy <br>
+Deze hands-on Labs technologie maakt het mogelijk om zelf cloud environments te bouwen,
+daarmee te experimenteren en je verder te verdiepen. Wij geven hier een lijst met beginner labs
+specifiek voor Azure. Voel je ook vrij om andere labs toegespitst op andere skills van Azure, AWS en
+Google te voltooien. <br>
+
+<p style="font-size: 42%; color: #000000;">
+</p></h1>
+
+<p>
+<p><a href="https://cloudacademy.com/lab/start-your-first-azure-virtual-machine-windows/">Start Your First Azure Virtual Machine (Windows) - Cloud Academy</a></p> 
+<p><a href="https://cloudacademy.com/lab/understanding-core-azure-storage-products/">Understanding Core Azure Storage Products - Cloud Academy</a></p> 
+<p><a href="https://cloudacademy.com/lab/deploying-monitoring-azure-app-service-web-apps/">Deploying And Monitoring Azure App Service Web Apps - Cloud Academy</a></p> 
+
+<body onload="load()">
+    <input type="checkbox" id="checkbox1zaal7EN"> I have completed the optional courses</input>
+    <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+    
+    </p></h1>
+    <h1>
+        <p style="font-size: 50%; color: #000000;">
+    Optioneel: Short-cut voor het maken van DP-900 examen: <br>
+On Examptopics you can find practice questions for the DP-900 exam. These 250 questions are
+representative for the exam and making these will help you prepare. The first 50 questions are for
+free.
+Further, you can find summaries of the Azure Data Fundamental course online. The following video
+will cover all the topics. This way it will take you less time to prepare compared to watching the
+Coursera course videos. <br>
+
+<p style="font-size: 42%; color: #000000;">
+</p></h1>
+<p>
+    <p><a href="https://www.youtube.com/watch?v=P3qmqUZJ7l0">Azure Data Fundamentals Certification (DP-900) - Full Course to PASS the Exam - YouTube</a></p>
+    <p style="font-size: 42%; color: #000000;">
+    </p></h1> Shortcut voor Azure DP-900 Examen:
+    <p><a href="https://docs.microsoft.com/en-us/learn/certifications/exams/dp-900">Exam DP-900: Microsoft Azure Data Fundamentals - Learn | Microsoft Docs</a></p> 
+    
+    <body onload="load()">
+        <input type="checkbox" id="checkbox1zaal8EN"> I have completed the DP-900 exam</input>
+        <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+
+        <h2> Azure certification path</h2>
+        <img src="DP900.jpg" alt="DP900" width="600" height="333"><br>
+        <br>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
+    </div>
+
+    <div class="comment-box" style="background-color: white;"
+        <p>Leave a comment</p>
+        <form class="comment-form">
+            <input type="text" name="full_name" placeholder="Name...">
+            <textarea rows="3" placeholder="Write your comment..."></textarea>
+            <button type="submit"> Post comment</button>
+        </form>
+    </div>
+        <h1>
+        <p style="position:relative; left:-720px; top:220px; text-align:center;font-size: 150%;" >
+        <a href= "kiestraject.html" class="button">
+            Terug
+
+</body>
+</html>

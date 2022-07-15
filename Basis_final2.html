@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+        <style>
+            body {font-family: 'Manrope';}
+            h1 {text-decoration-thickness: auto;}
+            .row{margin-left:20px}
+            .row{margin-top:120px}
+            .row:after{content: ""; display: table; clear: both;}
+    
+            .button {
+                padding: 9px 18px;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 12px;
+                margin: 4px 2px;
+                transition-duration: 0.2s;
+                cursor: pointer;
+                border-radius: 8px;
+                }
+            .button {background-color: #e57c2c; color: white; border: 2px solid #e57c2c;}
+            .button:hover {background-color: white; color: #e57c2c; border: 2px solid #e57c2c;}
+            .collapsible {
+                margin: 10px;
+                border: none;
+                background-color: #e57c2c;
+                padding: 10px;
+                font-size: 18px;
+                border-radius: 3px;
+                color: white;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  width: 8%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 10px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: whitesmoke;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:95%;
+  border: 1px solid #ccc;
+                margin: 50px 0;
+                padding: 10px 20px;
+                font-family: 'Manrope';
+                border-radius: 5px;
+                margin-left: 0%;
+                margin-top: 20px;
+                box-shadow: 0px 0px 10px 1px rgb(165, 165, 165);
+}
+            .comment-box{
+                width:30%;
+                border: 1px solid #ccc;
+                margin: 50px 0;
+                padding: 10px 20px;
+                font-family: 'Manrope';
+                border-radius: 5px;
+                margin-left: 0%;
+                margin-top: 80px;
+                box-shadow: 0px 0px 10px 1px rgb(165, 165, 165);
+
+            }
+            .comment-box p{
+                text-align: left;
+                font-size: 28px;
+                color: #325794;
+            }
+            .comment-form input, .comment-form textarea{
+                width: 100%;
+                padding: 10px;
+                margin:5px 0;
+                box-sizing: border-box;
+                outline: none;
+                font-size: 18px;
+                font-family: 'Manrope';
+                border: 1px solid #ddd;
+                color: #325794;
+
+            }
+            .comment-form button{
+                margin: 10px;
+                border: none;
+                background-color: #e57c2c;
+                padding: 10px;
+                font-size: 18px;
+                border-radius: 3px;
+                color: white;
+            }
+
+        button:hover{
+            color: white;
+            background-color: #444;
+        }
+        body {
+            background-image:url('cool-background3.jpg');
+            padding: 1px 1px;
+            margin: 80px;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            }
+            
+</style>
+
+
+
+        <script>
+          function save(){
+              var checkbox=document.getElementById('checkbox1zaal1BA');
+                  localStorage.setItem('checkbox1zaal1BA',checkbox.checked);
+                  checkbox=document.getElementById('checkbox1zaal2BA');
+                  localStorage.setItem('checkbox1zaal2BA',checkbox.checked);
+                  checkbox=document.getElementById('checkbox1zaal3BA');
+                  localStorage.setItem('checkbox1zaal3BA',checkbox.checked);
+                  checkbox=document.getElementById('checkbox1zaal4BA');
+                  localStorage.setItem('checkbox1zaal4BA',checkbox.checked);
+                  checkbox=document.getElementById('checkbox1zaal5BA');
+                  localStorage.setItem('checkbox1zaal5BA',checkbox.checked);
+                  checkbox=document.getElementById('checkbox1zaal6BA');
+                  localStorage.setItem('checkbox1zaal6BA',checkbox.checked);
+                  checkbox=document.getElementById('checkbox1zaal7BA');
+                  localStorage.setItem('checkbox1zaal7BA',checkbox.checked);
+                  checkbox=document.getElementById('checkbox1zaal8BA');
+                  localStorage.setItem('checkbox1zaal8BA',checkbox.checked);
+                  checkbox=document.getElementById('checkbox1zaal9BA');
+                  localStorage.setItem('checkbox1zaal9BA',checkbox.checked);
+                  checkbox=document.getElementById('checkbox1zaal10BA');
+                  localStorage.setItem('checkbox1zaal10BA',checkbox.checked);
+                  checkbox=document.getElementById('checkbox1zaal11BA');
+                  localStorage.setItem('checkbox1zaal11BA',checkbox.checked);
+                  checkbox=document.getElementById('checkbox1zaal12BA');
+                  localStorage.setItem('checkbox1zaal12BA',checkbox.checked);
+          }
+      
+          function load(){
+              var checked = JSON.parse(localStorage.getItem('checkbox1zaal1BA'));
+                  document.getElementById("checkbox1zaal1BA").checked =checked;
+                  checked = JSON.parse(localStorage.getItem('checkbox1zaal2BA'));
+                  document.getElementById("checkbox1zaal2BA").checked =checked;
+                  checked = JSON.parse(localStorage.getItem('checkbox1zaal3BA'));
+                  document.getElementById("checkbox1zaal3BA").checked =checked;
+                  checked = JSON.parse(localStorage.getItem('checkbox1zaal4BA'));
+                  document.getElementById("checkbox1zaal4BA").checked =checked;
+                  checked = JSON.parse(localStorage.getItem('checkbox1zaal5BA'));
+                  document.getElementById("checkbox1zaal5BA").checked =checked;
+                  checked = JSON.parse(localStorage.getItem('checkbox1zaal6BA'));
+                  document.getElementById("checkbox1zaal6BA").checked =checked;
+                  checked = JSON.parse(localStorage.getItem('checkbox1zaal7BA'));
+                  document.getElementById("checkbox1zaal7BA").checked =checked;
+                  checked = JSON.parse(localStorage.getItem('checkbox1zaal8BA'));
+                  document.getElementById("checkbox1zaal8BA").checked =checked;
+                  checked = JSON.parse(localStorage.getItem('checkbox1zaal9BA'));
+                  document.getElementById("checkbox1zaal9BA").checked =checked;
+                  checked = JSON.parse(localStorage.getItem('checkbox1zaal10BA'));
+                  document.getElementById("checkbox1zaal10BA").checked =checked;
+                  checked = JSON.parse(localStorage.getItem('checkbox1zaal11BA'));
+                  document.getElementById("checkbox1zaal11BA").checked =checked;
+                  checked = JSON.parse(localStorage.getItem('checkbox1zaal12BA'));
+                  document.getElementById("checkbox1zaal12BA").checked =checked;
+
+              }   
+      
+          function wis(){
+              location.reload();
+              localStorage.clear()
+      
+          }
+      </script>
+    </head>
+
+    <body>
+      
+
+
+
+            <h1>
+              <a href="kiestraject.html">
+              <p style="position:relative; left:-660px; top:-1000px;"></p>
+              <img src="logotransparant.png" alt="logo" width="285" height="100">
+            </a>
+
+            <p style="text-align:center;font-size: 150%; color: #325794;">
+            Algemeen specialisatie traject
+
+            </p></h1>
+
+            <html>
+              
+              <p style="position:relative; left:-660px; top:-1000px;"></p>
+             
+              </html>
+
+            <h1>
+                <p style="font-size: 75%; color: #000000;">
+                    ① Advanced SQL <br>
+            
+                    <p>
+                      <h1>
+                        <p style="font-size: 50%; color: #000000;">
+                        Uitleg: Dit traject leert je de basics van SQL en geavanceerdere onderwerpen zoals Regular Expressions, Stored Procedures en common table expressions. Mocht er overlap zitten tussen de courses en/of ben je al bekend met de onderwerpen dan kun je hier sneller doorheen gaan. Om meer hands-on experience te krijgen is het ook aan te raden om te oefenen met SQL via pgexercises en SQLzoo. <br>
+                        <br>
+                        Tijdsduur: 9 uur + oefeningen 
+                </p></h1>
+
+                <button type="button" class="collapsible">Bekijk course</button>
+                <div class="content">
+                <p>
+                <h1>
+                    <p style="font-size: 50%; color: #000000;">
+                        Course: 1. <br>
+                        Intermediate Relational Database and SQL (1 uur)
+                    </p></h1>              
+
+<button type="button" class="collapsible">Lees meer</button>
+<div class="content">
+
+<p>
+
+    <p><a href="https://www.coursera.org/projects/intermediate-rdb-sql">Intermediate Relational Database and SQL (coursera.org)</a></p>
+  
+    In this 1-hour long project-based course, you will gain hands-on experience and learn how to create and maintain relational databases such as MySQL, Oracle and MS Access. Concepts covered include database and table creation, primary keys and foreign keys. If you have some experience with end-user level SQL and want to advance to a designer or database administrator role, this course is for you! 
+    </p>
+    <body onload="load()">
+      <input type="checkbox" id="checkbox1zaal1BA"> I have completed course 1</input> <br>
+      <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+
+</div>
+
+
+
+            </p></h1>            
+        
+
+ 
+            
+
+            <h1>
+                <p style="font-size: 50%; color: #000000;">
+                    Course: 2. <br>
+                    Introduction to Regular Expressions in SQL (2.5 uur)
+                </p></h1>              
+
+
+
+<button type="button" class="collapsible">Lees meer</button>
+<div class="content">
+<p>
+<p><a href="https://www.coursera.org/projects/introduction-to-regular-expressions-in-sql">Introduction to Regular Expressions in SQL (coursera.org)</a></p>
+
+Welcome to this project-based course, Introduction to Regular Expressions in SQL. In this project, you will learn how to use SQL regular expressions extensively for pattern matching to query tables in a database. By the end of this 2-and-a-half-hour-long project, you will be able to use POSIX regular expressions together with meta (special) characters in the WHERE clause and the SELECT clause to retrieve the desired result from a database. In this project, we will move systematically by first revising the use of the LIKE and NOT LIKE operators in the WHERE clause. Then, we will use different regular expression metacharacters together with POSIX operators in the WHERE clause. Also, we will use regular expressions to work on tweets from Twitter data. Be assured that you will get your hands really dirty in this project because you will get to work on a lot of exercises to reinforce your knowledge of the concepts. Also, for this hands-on project, we will use PostgreSQL as our preferred database management system (DBMS). Therefore, to complete this project, it is required that you have prior experience with using PostgreSQL. Similarly, this project is an intermediate SQL concept; so, a good foundation for writing SQL queries is vital to complete this project. If you are not familiar with writing queries in SQL and want to learn these concepts, start with my previous guided projects titled “Querying Databases using SQL SELECT statement." I taught this guided project using PostgreSQL. So, taking these projects will give the needed requisite to complete this Introduction to Regular Expressions in SQL project. However, if you are comfortable writing queries in PostgreSQL, please join me on this wonderful ride! Let’s get our hands dirty!
+</p>
+<body onload="load()">
+  <input type="checkbox" id="checkbox1zaal2BA"> I have completed course 2</input> <br>
+  <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+</div>
+
+                </p></h1>   
+
+
+        <h1>
+            <p style="font-size: 50%; color: #000000;">
+Course: 3. <br>
+Advanced Relational Database and SQL (1,5 uur)
+</p></h1>              
+
+
+
+<button type="button" class="collapsible">Lees meer</button>
+<div class="content">
+<p>
+<p><a href="https://www.coursera.org/projects/advanced-rdb-sql">Advanced Relational Database and SQL (coursera.org)</a></p>
+
+In this 1-hour long project-based course, you will gain hands-on experience and learn about advanced SQL topics such as stored procedures, tiggers, functions, common table expressions and recursion. If you have intermediate level of experience with SQL and want to learn more, this course is for you!
+</p>
+<body onload="load()">
+  <input type="checkbox" id="checkbox1zaal3BA"> I have completed course 3</input> <br>
+  <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+</div>
+
+
+</p></h1>            
+
+
+<h1>
+    <p style="font-size: 50%; color: #000000;">
+Course: 4. <br>
+PostgreSQL for Everybody Specialization (4 uur)
+</p></h1>              
+
+
+
+<button type="button" class="collapsible">Lees meer</button>
+<div class="content">
+<p>
+<p><a href="https://www.coursera.org/specializations/postgresql-for-everybody#courses">PostgreSQL for Everybody Specialization (coursera.org)</a></p>
+
+Across these four courses, you’ll learn how to use the PostgreSQL database and explore topics ranging from database design to database architecture and deployment. You’ll also compare and contrast SQL and NoSQL approaches to database design. The skills in this course will be useful to learners doing data mining or application development.
+</p>
+<body onload="load()">
+  <input type="checkbox" id="checkbox1zaal4BA"> I have completed course 4</input> <br>
+  <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+</div>
+
+</p></h1>            
+
+
+<h1>
+    <p style="font-size: 50%; color: #000000;">
+Course: 5. <br>
+Programmeren via pgexercises.com en SQL Zoo.net. (Optioneel)
+</p></h1>      
+
+
+
+<button type="button" class="collapsible">Lees meer</button>
+<div class="content">
+  <br>
+<p>
+<p><a href="https://pgexercises.com/questions/basic/">Programmeren via pgexercises.com</a></p>
+
+The exercises on this site range from simple select and where clauses, through joins and case statements, and on to aggregations, window functions, and recursive queries. Most people who aren't already pros should find something to test themselves with.
+
+<p><a href="https://sqlzoo.net/wiki/SQL_Tutorial">Programmeren via SQL Zoo.net </a></p>
+
+SQLZoo includes tutorials and reference to support people learning SQL.
+
+</p>
+<body onload="load()">
+  <input type="checkbox" id="checkbox1zaal5BA"> I have completed pgexercises </input>
+  <input type="button" id="ReserveerButton1" value="save" onclick="save()"/> <br>
+</div>
+<br>
+</div>
+
+</p></h1>            
+
+
+<h1>
+  <p style="font-size: 75%; color: #000000;">
+    ② Advanced Python <br>
+  
+    <h1>
+      <p style="font-size: 50%; color: #000000;">
+    Uitleg: Dit traject zal je de basics van Python voor data analyse leren via youtube en coursera met als Tool Jupyter Notebook. <br>
+    <br>
+    Tijdsduur: 5 uur
+
+</p></h1>  
+
+<button type="button" class="collapsible">Bekijk course</button>
+<div class="content">
+<h1>
+  <p style="font-size: 50%; color: #000000;">
+  A.  Youtube (Sentdex) course Data Analysis with Python and Pandas <br>
+    
+</p></h1>   
+<h1>
+
+    <p style="font-size: 48%; color: #000000;">
+    </p></h1>
+    Python Machine Learning Tutorials (1-6) <br>
+    <br>
+    <button type="button" class="collapsible">Show</button>
+    <div class="content">
+    <p>
+<p><a href="https://www.youtube.com/watch?v=nLw1RNvfElg">    1. Introduction - Data Analysis and Data Science with Python and Pandas (22 min.)</a></p>
+<body onload="load()">
+  <input type="checkbox" id="checkbox1zaal6BA"> I have completed course 1</input> <br>
+  <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+<p><a href="https://www.youtube.com/watch?v=DamIIzp41Jg">    2. Graphing/visualization - Data Analysis with Python and Pandas p.2 (28 min.)</a></p>
+<body onload="load()">
+  <input type="checkbox" id="checkbox1zaal7BA"> I have completed course 2</input> <br>
+  <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+<p><a href="https://www.youtube.com/watch?v=fPufVcItDzs">    3. Groupby - Data Analysis with Python and Pandas p.3 (21 min.)</a></p>
+<body onload="load()">
+  <input type="checkbox" id="checkbox1zaal8BA"> I have completed course 3</input> <br>
+  <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+<p><a href="https://www.youtube.com/watch?v=afjIo7gO86o">    4. Visualizing Correlation Table - Data Analysis with Python and Pandas p.4 (33 min.)</a></p>
+<body onload="load()">
+  <input type="checkbox" id="checkbox1zaal9BA"> I have completed course 4</input> <br>
+  <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+<p><a href="https://www.youtube.com/watch?v=QGeQqGd6LPc">    5. Combining multiple datasets - Data Analysis with Python and Pandas p.5 (27 min.)</a></p>
+<body onload="load()">
+  <input type="checkbox" id="checkbox1zaal10BA"> I have completed course 5</input> <br>
+  <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+<p><a href="https://www.youtube.com/watch?v=BpPJxtOk8uw">    6. Machine Learning with Scikit-learn - Data Analysis with Python and Pandas p.6 (21 min.)</a></p>
+<body onload="load()">
+  <input type="checkbox" id="checkbox1zaal11BA"> I have completed course 6</input> <br>
+  <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+    </div>
+    
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.parentElement.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+
+
+
+<h1>
+  <p style="font-size: 48%; color: #000000;">
+    B. Coursera Guided Project
+    
+</p></h1>  
+
+<h1>
+  <p style="font-size: 42%; color: #000000;">
+    COVID19 Data Analysis Using Python - Home | Coursera
+    
+</p></h1>   
+
+<button type="button" class="collapsible">Lees meer</button>
+<div class="content">
+<p>
+<p><a href="https://www.coursera.org/projects/covid19-data-analysis-using-python">COVID19 Data Analysis Using Python - Home | Coursera</a></p>
+In this project, you will learn how to preprocess and merge datasets to calculate needed measures and prepare them for an Analysis. In this project, we are going to work with the COVID19 dataset, published by John Hopkins University, which consists of the data related to the cumulative number of confirmed cases, per day, in each Country. Also, we have another dataset consist of various life factors, scored by the people living in each country around the globe. We are going to merge these two datasets to see if there is any relationship between the spread of the virus in a country and how happy people are, living in that country <br>
+<br>
+<body onload="load()">
+  <input type="checkbox" id="checkbox1zaal12BA"> I have completed this course</input> <br>
+  <input type="button" id="ReserveerButton1" value="save" onclick="save()"/>
+</p>
+
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var content = this.nextElementSibling;
+if (content.style.display === "block") {
+content.style.display = "none";
+} else {
+content.style.display = "block";
+}
+});
+}
+</script>
+                        
+                        
+</p></h1>
+
+</div>
+
+<div class="comment-box" style="background-color: white;"
+<p>Leave a comment</p>
+<form class="comment-form">
+<input type="text" name="full_name" placeholder="Name...">
+<textarea rows="3" placeholder="Write your comment..."></textarea>
+<button type="submit"> Post comment</button>
+</form>
+</div>
+
+
+<h1>
+<p style="position:relative; left:-720px; top:220px; text-align:center;font-size: 150%;" >
+<a href= "kiestraject.html" class="button">
+Terug
+</body>
+</html>
+
