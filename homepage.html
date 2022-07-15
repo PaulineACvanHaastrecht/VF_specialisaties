@@ -2,32 +2,31 @@
     <head>
         <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
         <link rel="stylesheet" href="style.css">
-        <script defer src="login.js"></script>
+        <script defer src="login.js"></script>        
     </head>
 
+
     <body>
-
-
         <main id="main-holder">
-        <h2>Log in </h2>
+            <div id="content-img">
+                <img src="logo.jpg" alt="logo" width="250" height="100">
+            </div>
 
-        <div id="login-error-msg-holder">
-            <p id="login-error-msg">Ongeldige email en/of wachtwoord</p>
-        </div>
+            <h2>Log in </h2>
+            <div id="login-error-msg-holder">
+                <p id="login-error-msg">Ongeldige email en/of wachtwoord</p>
+            </div>
+            
+            <hr>
+            <form id="login-form">
+                <label for="username"><b>Email</b></label>
+                <input type="text" name="username" id="username-field" placeholder="Vul in Veneficus Email" name="username" required>
 
-        <hr>
-
-        <form id="login-form">
-        <label for="username"><b>Email</b></label>
-        <input type="text" name="username" id="username-field" placeholder="Vul in Veneficus Email" name="username" required>
-
-
-        <label for="password"><b>Wachtwoord</b></label>
-        <input type="password" id="password-field" class="login-form-field" placeholder="Vul in Wachtwoord" name="password" required>
-        
-        <input type="submit" value="Login" id="button">
-        </form>
-
+                <label for="password"><b>Wachtwoord</b></label>
+                <input type="password" id="password-field" class="login-form-field" placeholder="Vul in Wachtwoord" name="password" required>
+                
+                <input type="submit" value="Login" id="button">
+            </form>
         </main>
     </body>
 </html>

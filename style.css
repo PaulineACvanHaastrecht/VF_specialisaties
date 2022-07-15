@@ -17,6 +17,8 @@ input[type=text], input[type=password] {
 
 #button {
     padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
     margin: 8px 0;
     border: none;
     cursor: pointer;
@@ -27,14 +29,14 @@ input[type=text], input[type=password] {
     border: 2px solid #e57c2c;
     outline: none;}
 
-/* button::hover{background-color: white; color: #e57c2c; border: 2px solid #e57c2c;} */
+#button:hover{background-color: white; color: #e57c2c; border: 2px solid #e57c2c;}
 
 hr{border: 1px solid #f1f1f1;margin-bottom: 25px;}
 
-#login-error-msg {color: red; opacity: 0;}
+#login-error-msg {color: red;}
 
 #login-error-msg-holder {
-    display: grid;
+    display: none;
     justify-items: left;
     align-items: left;}
 
@@ -48,3 +50,42 @@ hr{border: 1px solid #f1f1f1;margin-bottom: 25px;}
     justify-items: left;
     align-items: left;
     }
+
+#content-img {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    }
+
+#name-page { 
+    position: absolute;
+    font-size: 150%;
+    top: 0%;
+    left: 30%;
+    }
+
+#row {
+    margin-left: 20px;
+    margin-top: 120px;
+    width: 95%;
+    }
+
+#row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    
+#boxed-in {
+    position: relative;
+    float: left;
+    display: grid; 
+    width: 24%; 
+    border: 3px solid #f9fafb; 
+    background-color: #f9fafb;
+    margin: 2px;}
+
+#kies-traject-vak-T {text-align:center; font-size: 200%;}
+#kies-traject-vak-B {text-align:center; font-size: 150%;}
+
+#text-collor {color: #767171}

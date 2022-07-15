@@ -1,6 +1,6 @@
 const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("button");
-const loginErrorMsg = document.getElementById("login-error-msg");
+const loginErrorMsgHldr = document.getElementById("login-error-msg-holder");
 
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
@@ -8,10 +8,8 @@ loginButton.addEventListener("click", (e) => {
     const password = loginForm.password.value;
 
     if (username === "test" && password === "test") {
-        // alert("You have successfully logged in.");
-        // location.reload();
-        window.location.assign("kiestraject.html");
+        window.location.assign("kiestraject_opgeschoond.html");
     } else {
-        loginErrorMsg.style.opacity = 1;
+        loginErrorMsgHldr.style.display = "grid";
     }
 })
